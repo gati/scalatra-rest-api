@@ -1,4 +1,4 @@
-package com.gatillc.xmas
+package com.gatillc.rest_api
 import _root_.akka.actor.{ActorSystem, Props}
 import org.scalatra.test.specs2._
 

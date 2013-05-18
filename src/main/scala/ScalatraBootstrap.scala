@@ -1,7 +1,7 @@
 import _root_.akka.actor.{ActorSystem, Props}
 import com.mongodb.casbah.Imports._
-import com.gatillc.xmas._
-import com.gatillc.xmas.models._
+import com.gatillc.rest_api._
+import com.gatillc.rest_api.models._
 import org.scalatra._
 import javax.servlet.ServletContext
 
@@ -12,7 +12,7 @@ class ScalatraBootstrap extends LifeCycle {
 
   // Setup mongo connection
   val mongoClient =  MongoClient()
-  val mongoDB = mongoClient("xmas_dev")
+  val mongoDB = mongoClient("rest_api")
 
   // In the init method, mount your servlets with references to the system
   // and/or ActorRefs, as necessary.

@@ -5,15 +5,15 @@ import org.scalatra.sbt.PluginKeys._
 import com.mojolly.scalate.ScalatePlugin._
 import ScalateKeys._
 
-object XmasLightContestBuild extends Build {
+object RestApiBuild extends Build {
   val Organization = "com.gatillc"
-  val Name = "Xmas Light Contest"
+  val Name = "REST API"
   val Version = "0.1.0-SNAPSHOT"
   val ScalaVersion = "2.10.1"
   val ScalatraVersion = "2.2.0"
 
   lazy val project = Project (
-    "xmas-light-contest",
+    "rest_api",
     file("."),
     settings = Defaults.defaultSettings ++ ScalatraPlugin.scalatraWithJRebel ++ scalateSettings ++ Seq(
       organization := Organization,
